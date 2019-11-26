@@ -32,7 +32,8 @@ $spaces: ($auto: auto,
 );
 
 /* width */
-$widths: ($auto: auto,
+$widths: (
+    $auto: auto,
     $zero: 0,
     5 : 5%,
     10 : 10%,
