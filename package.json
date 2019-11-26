@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": "git@https://github.com/webhell/css.git",
   "author": "sai <hoosai@163.com>",
-  "main": "build/index.js",
+  "main": "build/index.css",
   "scripts": {
       "clean": "gulp clean",
       "dev": "gulp dev",
