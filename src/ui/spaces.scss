@@ -1,0 +1,81 @@
+@each $name,
+$size in $spaces {
+
+    /* margin-top */
+    .#{$prefix}mg#{$delimiter1}t#{if($name != '', $delimiter2 + $name, '')} {
+        margin-top: #{$size};
+    }
+
+    /* margin-right */
+    .#{$prefix}mg#{$delimiter1}r#{if($name != '', $delimiter2 + $name, '')} {
+        margin-right: #{$size};
+    }
+
+    /* margin-bottom */
+    .#{$prefix}mg#{$delimiter1}b#{if($name != '', $delimiter2 + $name, '')} {
+        margin-bottom: #{$size};
+    }
+
+    /* margin-left */
+    .#{$prefix}mg#{$delimiter1}l#{if($name != '', $delimiter2 + $name, '')} {
+        margin-left: #{$size};
+    }
+
+    /* horizontal margins */
+    .#{$prefix}mg#{$delimiter1}#{$horizontal}#{if($name != '', $delimiter2 + $name, '')} {
+        margin-left: #{$size};
+        margin-right: #{$size};
+    }
+
+    /* vertical margins */
+    .#{$prefix}mg#{$delimiter1}#{$vertical}#{if($name != '', $delimiter2 + $name, '')} {
+        margin-top: #{$size};
+        margin-bottom: #{$size};
+    }
+
+    /* all margins */
+    .#{$prefix}mg#{$delimiter1}#{$all}#{if($name != '', $delimiter2 + $name, '')} {
+        margin: #{$size};
+    }
+}
+
+@each $name,
+$size in $spaces {
+
+    /* padding-top */
+    .#{$prefix}pd#{$delimiter1}t#{if($name != '', $delimiter2 + $name, '')} {
+        padding-top: #{$size};
+    }
+
+    /* padding-right */
+    .#{$prefix}pd#{$delimiter1}r#{if($name != '', $delimiter2 + $name, '')} {
+        padding-right: #{$size};
+    }
+
+    /* padding-bottom */
+    .#{$prefix}pd#{$delimiter1}b#{if($name != '', $delimiter2 + $name, '')} {
+        padding-bottom: #{$size};
+    }
+
+    /* padding-left */
+    .#{$prefix}pd#{$delimiter1}l#{if($name != '', $delimiter2 + $name, '')} {
+        padding-left: #{$size};
+    }
+
+    /* horizontal paddings */
+    .#{$prefix}pd#{$delimiter1}#{$horizontal}#{if($name != '', $delimiter2 + $name, '')} {
+        padding-left: #{$size};
+        padding-right: #{$size};
+    }
+
+    /* vertical paddings */
+    .#{$prefix}pd#{$delimiter1}#{$vertical}#{if($name != '', $delimiter2 + $name, '')} {
+        padding-top: #{$size};
+        padding-bottom: #{$size};
+    }
+
+    /* all paddings */
+    .#{$prefix}pd#{$delimiter1}#{$all}#{if($name != '', $delimiter2 + $name, '')} {
+        padding: #{$size};
+    }
+}

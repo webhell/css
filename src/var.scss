@@ -1,0 +1,158 @@
+// optional prefix to prevent naming collisions
+$prefix: '';
+
+$auto      : 'a';
+$zero      : '0';
+$all       : ''; // all values (top, right, bottom, left);
+$horizontal: 'h'; // horizontal values (left, right)
+$vertical  : 'v'; // vertical values (top, bottom)
+// flex-box
+$flex: 'flex'; // flex attribute
+$flex-box: 'flex-box'; // flex-box attribute
+
+// naming delimiters
+$delimiter1: '';
+$delimiter2: '-';
+
+$borderColor: #dddddd;
+
+// margin and padding spacing
+$spaces: ($auto: auto,
+    $zero: 0 !important,
+    xxxs: 3px,
+    xxs: 5px,
+    xs: 8px,
+    sm: 10px,
+    '': 13px,
+    md: 15px,
+    lg: 20px,
+    xl: 25px,
+    xxl: 40px,
+    xxxl: 60px,
+);
+
+/* width */
+$widths: ($auto: auto,
+    $zero: 0,
+    5 : 5%,
+    10 : 10%,
+    25 : 25%,
+    33 : (100% / 3),
+    50 : 50%,
+    66 : (100% / 3 * 2),
+    100: 100%,
+);
+
+/* font-size */
+$fontSize: (
+    $auto: auto,
+    $zero: 0,
+    10: 10px,
+    11: 11px,
+    12: 12px,
+    13: 13px,
+    14: 14px,
+    15: 15px,
+    16: 16px,
+    18: 18px,
+    20: 20px,
+    24: 24px,
+    28: 28px,
+    32: 32px,
+);
+
+/* line-height */
+$lineHeight: (
+    nm: normal,
+    10: 1.0,
+    11: 1.1,
+    12: 1.2,
+    13: 1.3,
+    14: 1.4,
+    15: 1.5,
+    20: 2.0,
+);
+
+/* radius */
+$radius: (
+    $zero: 0 !important,
+    circle: 100%,
+    xxs: 2px,
+    xs: 3px,
+    sm: 4px,
+    '': 5px,
+    md: 6px,
+    lg: 8px,
+    xl: 10px,
+    xxl: 20px,
+);
+
+/* color */
+$colors: (white: #FFFFFF,
+    black: #000000,
+    trans: transparent,
+    current: currentColor,
+    // red error danger
+    r11: #FFECE4,
+    r12: #FFC8B2,
+    r13: #FF3000,
+    r14: #E72B00,
+    // green success
+    g11: #E4FDDA,
+    g12: #CDF2BE,
+    g13: #46BC15,
+    g14: #41A716,
+    // blue notice primary
+    b11: #E3F2FD,
+    b12: #BAD9FF,
+    b13: #4494F9,
+    b14: #2E7DE0,
+    // yellow warning
+    y11: #FFF3E0,
+    y12: #FFE6BD,
+    y13: #FF9300,
+    y14: #EB7E10,
+    // 文字text
+    t11: #CCCCCC,
+    t12: #999999,
+    t13: #666666,
+    t14: #333333,
+    // 填充fill 
+    f11: #F7F8FA,
+    f12: #F2F3F7,
+    f13: #EBECF0,
+    f14: #E2E4E8,
+    // 线条 line
+    l11: #E6E7EB,
+    l12: #DCDEE3,
+    l13: #C4C6CF,
+    l14: #A0A2AD,
+    // other
+    o11: #E3FFF8,
+    o12: #C0ECE2,
+    o13: #01C1B2,
+    o14: #01A79A,
+    o21: #5584FF,
+    o22: #5584FF,
+    o23: #3E71F7,
+    o31: #FFEB3B,
+    o32: #FCCC12,
+    o33: #EABB06,
+    // data
+    d11: #26DAD0,
+    d12: #5C89FF,
+    d13: #7C6AF2,
+    d14: #C95FF2,
+    d15: #FF6383,
+    d16: #FF9F40,
+    d17: #FFCB48,
+    d18: #31DC72,
+);
+
+/* box-shadow */
+$shadow: ($zero: none !important,
+    1: "0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)",
+    2: "0 2px 12px 0 rgba(0, 0, 0, 0.1)",
+    3: "0 2px 20px 0 rgba(0, 0, 0, 0.05)",
+    4: "0 2px 40px 0 rgba(0, 0, 0, 0.05)",
+);

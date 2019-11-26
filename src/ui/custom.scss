@@ -1,0 +1,172 @@
+/* widths */
+@each $name,
+$size in $widths {
+    .#{$prefix}w#{$delimiter1}#{$name} {
+        width: #{$size};
+    }
+}
+
+;
+
+/* font-size */
+@each $name,
+$size in $fontSize {
+    .#{$prefix}fs#{$delimiter1}#{$name} {
+        font-size: #{$size};
+    }
+}
+
+;
+
+/* line-height */
+@each $name,
+$size in $lineHeight {
+    .#{$prefix}lh#{$delimiter1}#{$name} {
+        line-height: #{$size};
+    }
+}
+
+;
+
+/* border-radius */
+@each $name,
+$size in $radius {
+    .#{$prefix}radius#{if($name != '', $delimiter2 + $name, '')} {
+        border-radius: #{$size};
+    }
+}
+
+;
+
+/* position fixed */
+@each $name,
+$value in (abs, absolute),
+(fixed, fixed) {
+    .#{$prefix}#{$name}#{$delimiter2}lt {
+        position: $value;
+        left    : 0;
+        top     : 0;
+    }
+
+    .#{$prefix}#{$name}#{$delimiter2}rt {
+        position: $value;
+        right   : 0;
+        top     : 0;
+    }
+
+    .#{$prefix}#{$name}#{$delimiter2}lb {
+        position: $value;
+        left    : 0;
+        bottom  : 0;
+    }
+
+    .#{$prefix}#{$name}#{$delimiter2}rb {
+        position: $value;
+        right   : 0;
+        bottom  : 0;
+    }
+
+    .#{$prefix}#{$name}#{$delimiter2}t {
+        position: $value;
+        top     : 0;
+        left    : 0;
+        width   : 100%;
+    }
+
+    .#{$prefix}#{$name}#{$delimiter2}b {
+        position: $value;
+        bottom  : 0;
+        left    : 0;
+        width   : 100%;
+    }
+
+    .#{$prefix}#{$name}#{$delimiter2}0 {
+        position: $value;
+        bottom  : 0;
+        left    : 0;
+        right   : 0;
+        top     : 0;
+    }
+
+    .#{$prefix}#{$name}#{$delimiter2}lc {
+        position     : $value;
+        top          : 0;
+        right        : auto;
+        bottom       : 0;
+        left         : 0;
+        margin-top   : auto;
+        margin-bottom: auto;
+    }
+
+    .#{$prefix}#{$name}#{$delimiter2}rc {
+        position     : $value;
+        top          : 0;
+        right        : 0;
+        bottom       : 0;
+        left         : auto;
+        margin-top   : auto;
+        margin-bottom: auto;
+    }
+
+    .#{$prefix}#{$name}#{$delimiter2}c {
+        position: $value;
+        top     : 0;
+        right   : 0;
+        bottom  : 0;
+        left    : 0;
+        margin  : auto;
+    }
+}
+
+/* border */
+@mixin border($color, $style:solid, $width: 1px) {
+    .#{$prefix}border {
+        border: #{$width} #{$style} #{$color};
+    }
+
+    .#{$prefix}border#{$delimiter2}0 {
+        border: 0;
+    }
+
+    .#{$prefix}border#{$delimiter2}l {
+        border-left: #{$width} #{$style} #{$color};
+    }
+
+    .#{$prefix}border#{$delimiter2}r {
+        border-right: #{$width} #{$style} #{$color};
+    }
+
+    .#{$prefix}border#{$delimiter2}t {
+        border-top: #{$width} #{$style} #{$color};
+    }
+
+    .#{$prefix}border#{$delimiter2}b {
+        border-bottom: #{$width} #{$style} #{$color};
+    }
+}
+
+@include border($borderColor);
+
+/* color */
+@each $name,
+$color in $colors {
+    .#{$prefix}color#{if($name != '', $delimiter2 + $name, '')} {
+        color: #{$color};
+    }
+}
+
+/* background-color */
+@each $name,
+$color in $colors {
+    .#{$prefix}bgc#{if($name != '', $delimiter2 + $name, '')} {
+        background-color: #{$color};
+    }
+}
+
+/* box-shadow */
+@each $name,
+$size in $shadow {
+    .#{$prefix}shadow#{if($name != '', $delimiter2 + $name, '')} {
+        box-shadow: #{$size};
+    }
+}

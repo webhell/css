@@ -1,0 +1,190 @@
+.#{$prefix}cf::after {
+    content   : ".";
+    display   : block;
+    clear     : both;
+    visibility: hidden;
+    height    : 0;
+    overflow  : hidden;
+}
+
+.#{$prefix}fl {
+    float: left;
+}
+
+.#{$prefix}fr {
+    float: right;
+}
+
+.#{$prefix}bsbb {
+    box-sizing: border-box;
+}
+
+.#{$prefix}bscb {
+    box-sizing: content-box;
+}
+
+.#{$prefix}db {
+    display: block;
+}
+
+.#{$prefix}dib {
+    display : inline-block;
+    *display: inline;
+    *zoom   : 1;
+}
+
+.#{$prefix}di {
+    display: inline;
+}
+
+.#{$prefix}dn {
+    display: none;
+}
+
+.#{$prefix}oh {
+    overflow: hidden;
+}
+
+.#{$prefix}vh {
+    visibility: hidden;
+}
+
+.#{$prefix}pr {
+    position: relative;
+}
+
+.#{$prefix}prz {
+    position: relative;
+    zoom    : 1;
+}
+
+.#{$prefix}ff0 {
+    font-family: arial, \5b8b\4f53;
+}
+
+.#{$prefix}ff1 {
+    font-family: "Microsoft YaHei", \5fae\8f6f\96c5\9ed1, arial, \5b8b\4f53;
+}
+
+.#{$prefix}fwn {
+    font-weight: normal;
+}
+
+.#{$prefix}fwb {
+    font-weight: bold;
+}
+
+.#{$prefix}tal {
+    text-align: left;
+}
+
+.#{$prefix}tac {
+    text-align: center;
+}
+
+.#{$prefix}tar {
+    text-align: right;
+}
+
+.#{$prefix}taj {
+    text-align  : justify;
+    text-justify: inter-ideograph;
+}
+
+.#{$prefix}ti {
+    overflow   : hidden;
+    text-indent: -30000px;
+}
+
+.#{$prefix}ti2 {
+    text-indent: 2em;
+}
+
+.#{$prefix}vam {
+    vertical-align: middle;
+}
+
+.#{$prefix}vama * {
+    vertical-align: middle;
+}
+
+.#{$prefix}vat {
+    vertical-align: top;
+}
+
+.#{$prefix}vab {
+    vertical-align: bottom;
+}
+
+.#{$prefix}vabl {
+    vertical-align: baseline;
+}
+
+.#{$prefix}wsn {
+    white-space: nowrap;
+    word-wrap  : normal;
+}
+
+.#{$prefix}wwb {
+    word-wrap  : break-word;
+    word-break : break-all;
+    white-space: normal;
+}
+
+.#{$prefix}pre {
+    overflow   : hidden;
+    text-align : left;
+    white-space: pre-wrap;
+    word-wrap  : break-word;
+    word-break : break-all;
+}
+
+.#{$prefix}tdu,
+.#{$prefix}tdu:hover {
+    text-decoration: underline;
+}
+
+.#{$prefix}tdn,
+.#{$prefix}tdn:hover {
+    text-decoration: none;
+}
+
+.#{$prefix}toe {
+    overflow     : hidden;
+    word-wrap    : normal;
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+}
+
+.#{$prefix}toe2 {
+    overflow          : hidden;
+    text-overflow     : ellipsis;
+    display           : -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp        : 2;
+}
+
+.#{$prefix}csp {
+    cursor: pointer;
+}
+
+.#{$prefix}csd {
+    cursor: default;
+}
+
+.#{$prefix}csh {
+    cursor: help;
+}
+
+.#{$prefix}csm {
+    cursor: move;
+}
+
+.#{$prefix}usn {
+    -webkit-user-select: none;
+    -moz-user-select   : none;
+    -ms-user-select    : none;
+    -o-user-select     : none;
+    user-select        : none;
+}

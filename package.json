@@ -1,0 +1,34 @@
+{
+  "name": "@webhell/css",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "git@https://github.com/webhell/css.git",
+  "author": "sai <hoosai@163.com>",
+  "main": "build/index.js",
+  "scripts": {
+      "clean": "gulp clean",
+      "dev": "gulp dev",
+      "start": "gulp dev",
+      "build": "gulp clean && gulp build",
+      "prepublish": "npm run build"
+  },
+  "devDependencies": {
+      "del": "^5.1.0",
+      "gulp": "^4.0.2",
+      "gulp-autoprefixer": "^7.0.1",
+      "gulp-rename": "^1.4.0",
+      "gulp-sass": "^4.0.2"
+  },
+  "browserslist": [
+      "ie >= 8",
+      "ie_mob >= 10",
+      "ff >= 26",
+      "chrome >= 30",
+      "safari >= 6",
+      "opera >= 23",
+      "ios >= 5",
+      "android >= 2.3",
+      "bb >= 10"
+  ]
+}
+
